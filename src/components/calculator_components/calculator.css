@@ -1,0 +1,75 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #242424;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+thead {
+  background: linear-gradient(90deg, #171723, #242424);
+}
+
+thead th {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 14px;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+tbody td {
+  padding: 12px;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+tfoot {
+  background-color: #242424;
+}
+
+tfoot td {
+  padding: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.grand-total-value {
+  color: #4ade80; /* Verde brillante para resaltar el total */
+  font-size: 1.2rem;
+}
+
+input[type="number"] {
+  background-color: #242424;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: 80px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4ade80;
+  box-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+}
+
+.contenedor-select{
+  margin-top: 15px;
+}
+

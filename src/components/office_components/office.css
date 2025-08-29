@@ -1,0 +1,163 @@
+select {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #ffffff;
+  min-width: 150px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:hover {
+  border-color: #646cff;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4ade80;
+  box-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+}
+
+select option {
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Lo nuevo */
+/* Card */
+.card-producto {
+  background: #2e2e2e;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-producto:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Formulario dentro de la card */
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Grupo de campos en fila */
+.grupo-campos {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.campo {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-size: 0.8rem;
+  color: #bbb;
+  margin-bottom: 4px;
+}
+
+.campo input,
+.campo select {
+  background: #3a3a3a;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.campo input:focus,
+.campo select:focus {
+  outline: none;
+  border-color: #6fcf97;
+  background: #444;
+}
+
+/* Botones */
+.acciones {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-guardar {
+  background: #4caf50; /* Verde más suave */
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-guardar:hover {
+  background: #43a047;
+}
+
+.btn-eliminar {
+  background: #e53935; /* Rojo más apagado */
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-eliminar:hover {
+  background: #c62828;
+}
+
+.btn-anadir{
+  margin-top: 15px;
+}
+
+.lista-productos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+/* Tiene que ver con scroll y su contenedor */
+.scroll-container {
+  max-height: 80vh; /* Mitad de la altura de la ventana */
+  overflow-y: auto; /* Muestra scroll vertical cuando es necesario */
+  padding: 10px;
+}
+/* Personalización del scroll para navegadores WebKit (Chrome, Safari, Edge) */
+.scroll-container::-webkit-scrollbar {
+  width: 5px; /* Ancho del scroll */
+}
+.scroll-container::-webkit-scrollbar-track {
+  background: #2f2e2e; /* Color de la pista del scroll */
+  border-radius: 10px;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #141212; /* Color del thumb (la barra que se mueve) */
+  border-radius: 10px;
+}
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #1d1a1a; /* Color al pasar el mouse */
+}
